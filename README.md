@@ -1,4 +1,4 @@
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/692f1a48-f102-462f-a698-06ab5ce49437" />
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/7da36820-47ad-45f5-bda9-d92f3054de02" />
 
 
 ## AWS | EKS BluePrint ProxySQL
