@@ -12,27 +12,13 @@ module "httpd" {
   service_type = "ClusterIP"
 }
 
-module "local-exec" {
-  source = "./modules/local-exec"
-  depends_on = [module.httpd]
-}
-
 module "kong" {
   source = "./modules/kong"
   depends_on = [module.httpd]
 }
 
-module "minio" {
-  source = "./modules/minio"
+module "local-exec" {
+  source = "./modules/local-exec"
   depends_on = [module.kong]
 }
 
-module "velero" {
-  source = "./modules/velero"
-  depends_on = [module.minio]
-}
-
-module "velero-ui" {
-  source = "./modules/velero-ui"
-  depends_on = [module.velero]
-}
