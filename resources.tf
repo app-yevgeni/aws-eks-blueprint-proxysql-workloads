@@ -17,8 +17,8 @@ module "kong" {
   depends_on = [module.httpd]
 }
 
-module "local-exec" {
-  source = "./modules/local-exec"
+module "proxysql" {
+  source = "./modules/proxysql"
   depends_on = [module.kong]
 }
 
