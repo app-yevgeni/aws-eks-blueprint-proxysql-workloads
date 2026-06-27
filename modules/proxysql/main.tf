@@ -1,3 +1,4 @@
+
 resource "kubernetes_config_map_v1" "proxysql" {
   metadata {
     name = "proxysql-config"
