@@ -134,7 +134,7 @@ resource "kubernetes_service_v1" "proxysql" {
       port        = 6033
       target_port = 6033
     }
-    type = "ClusterIP"
+    type = "LoadBalancer" # LoadBalancer \ ClusterIP
   }
 }
 
